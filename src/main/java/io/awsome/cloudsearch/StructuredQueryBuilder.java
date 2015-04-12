@@ -148,7 +148,7 @@ public class StructuredQueryBuilder {
 	 * 
 	 * @param expressions
 	 *            One or more expressions to <code>and</code> together.
-	 * @return
+	 * @return {@link StructuredQueryBuilder}
 	 */
 	public static StructuredQueryBuilder and(
 			StructuredQueryBuilder... expressions) {
@@ -167,7 +167,7 @@ public class StructuredQueryBuilder {
 	 * 
 	 * @param expressions
 	 *            One or more expressions to <code>or</code> together.
-	 * @return
+	 * @return {@link StructuredQueryBuilder}
 	 */
 	public static StructuredQueryBuilder or(
 			StructuredQueryBuilder... expressions) {
@@ -185,7 +185,7 @@ public class StructuredQueryBuilder {
 	 * </pre>
 	 * 
 	 * @param expressions
-	 * @return
+	 * @return {@link StructuredQueryBuilder}
 	 */
 	public static StructuredQueryBuilder not(
 			StructuredQueryBuilder... expressions) {
@@ -203,7 +203,7 @@ public class StructuredQueryBuilder {
 	 * (matchall)
 	 * </pre>
 	 * 
-	 * @return
+	 * @return {@link StructuredQueryBuilder}
 	 */
 	public static StructuredQueryBuilder matchall() {
 		return new StructuredQueryBuilder();
@@ -220,7 +220,7 @@ public class StructuredQueryBuilder {
 	 *            The name of the indexed field to search for the phrase in.
 	 * @param phrase
 	 *            The phrase to search for.
-	 * @return
+	 * @return {@link StructuredQueryBuilder}
 	 */
 	public static StructuredQueryBuilder phrase(String field, String phrase) {
 		return new StructuredQueryBuilder(ExpressionType.PHRASE, field,
@@ -238,7 +238,7 @@ public class StructuredQueryBuilder {
 	 *            The name of the indexed field to search for the prefix.
 	 * @param prefix
 	 *            The prefix to search for.
-	 * @return
+	 * @return {@link StructuredQueryBuilder}
 	 */
 	public static StructuredQueryBuilder prefix(String field, String prefix) {
 		return new StructuredQueryBuilder(ExpressionType.PREFIX, field,
@@ -257,7 +257,7 @@ public class StructuredQueryBuilder {
 	 *            The name of the indexed field to search for the term.
 	 * @param value
 	 *            The value to search for.
-	 * @return
+	 * @return {@link StructuredQueryBuilder}
 	 */
 	public static StructuredQueryBuilder eq(String field, String value) {
 		return new StructuredQueryBuilder(ExpressionType.TERM, field,
@@ -276,7 +276,7 @@ public class StructuredQueryBuilder {
 	 *            The name of the indexed field to search for the term.
 	 * @param value
 	 *            The value to search for.
-	 * @return
+	 * @return {@link StructuredQueryBuilder}
 	 */
 	public static StructuredQueryBuilder eq(String field, Long value) {
 		return new StructuredQueryBuilder(ExpressionType.TERM, field,
@@ -295,7 +295,7 @@ public class StructuredQueryBuilder {
 	 *            The name of the indexed field to search for the term.
 	 * @param value
 	 *            The value to search for.
-	 * @return
+	 * @return {@link StructuredQueryBuilder}
 	 */
 	public static StructuredQueryBuilder eq(String field, Double value) {
 		return new StructuredQueryBuilder(ExpressionType.TERM, field,
@@ -314,7 +314,7 @@ public class StructuredQueryBuilder {
 	 *            The name of the indexed field to search for the term.
 	 * @param value
 	 *            The value to search for.
-	 * @return
+	 * @return {@link StructuredQueryBuilder}
 	 */
 	public static StructuredQueryBuilder eq(String field, Date value) {
 		String date = formatter.get().format(value);
@@ -336,7 +336,7 @@ public class StructuredQueryBuilder {
 	 *            The value to search from.
 	 * @param to
 	 *            The value to search to.
-	 * @return
+	 * @return {@link StructuredQueryBuilder}
 	 */
 	public static StructuredQueryBuilder range(String field, String from,
 			String to) {
@@ -359,7 +359,7 @@ public class StructuredQueryBuilder {
 	 *            The value to search from.
 	 * @param to
 	 *            The value to search to.
-	 * @return
+	 * @return {@link StructuredQueryBuilder}
 	 */
 	public static StructuredQueryBuilder range(String field, Long from, Long to) {
 		return new StructuredQueryBuilder(ExpressionType.RANGE, field,
@@ -380,7 +380,7 @@ public class StructuredQueryBuilder {
 	 *            The value to search from.
 	 * @param to
 	 *            The value to search to.
-	 * @return
+	 * @return {@link StructuredQueryBuilder}
 	 */
 	public static StructuredQueryBuilder range(String field, Double from,
 			Double to) {
@@ -402,7 +402,7 @@ public class StructuredQueryBuilder {
 	 *            The value to search from.
 	 * @param to
 	 *            The value to search to.
-	 * @return
+	 * @return {@link StructuredQueryBuilder}
 	 */
 	public static StructuredQueryBuilder range(String field, Date from, Date to) {
 		String fromDate = formatter.get().format(from);
