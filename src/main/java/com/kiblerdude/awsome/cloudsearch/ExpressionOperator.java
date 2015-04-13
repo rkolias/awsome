@@ -1,4 +1,4 @@
-package io.awsome.cloudsearch;
+package com.kiblerdude.awsome.cloudsearch;
 
 /**
  * Enumerates the logical operators supported in a Structured Query.

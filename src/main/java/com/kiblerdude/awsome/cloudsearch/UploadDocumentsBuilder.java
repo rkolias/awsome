@@ -1,4 +1,4 @@
-package io.awsome.cloudsearch;
+package com.kiblerdude.awsome.cloudsearch;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

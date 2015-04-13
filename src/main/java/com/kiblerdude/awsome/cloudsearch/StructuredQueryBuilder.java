@@ -1,4 +1,4 @@
-package io.awsome.cloudsearch;
+package com.kiblerdude.awsome.cloudsearch;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

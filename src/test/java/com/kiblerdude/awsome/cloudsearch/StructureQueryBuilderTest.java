@@ -1,13 +1,13 @@
-package io.awsome.cloudsearch;
+package com.kiblerdude.awsome.cloudsearch;
 
-import static io.awsome.cloudsearch.StructuredQueryBuilder.and;
-import static io.awsome.cloudsearch.StructuredQueryBuilder.or;
-import static io.awsome.cloudsearch.StructuredQueryBuilder.not;
-import static io.awsome.cloudsearch.StructuredQueryBuilder.eq;
-import static io.awsome.cloudsearch.StructuredQueryBuilder.matchall;
-import static io.awsome.cloudsearch.StructuredQueryBuilder.phrase;
-import static io.awsome.cloudsearch.StructuredQueryBuilder.prefix;
-import static io.awsome.cloudsearch.StructuredQueryBuilder.range;
+import static com.kiblerdude.awsome.cloudsearch.StructuredQueryBuilder.and;
+import static com.kiblerdude.awsome.cloudsearch.StructuredQueryBuilder.eq;
+import static com.kiblerdude.awsome.cloudsearch.StructuredQueryBuilder.matchall;
+import static com.kiblerdude.awsome.cloudsearch.StructuredQueryBuilder.not;
+import static com.kiblerdude.awsome.cloudsearch.StructuredQueryBuilder.or;
+import static com.kiblerdude.awsome.cloudsearch.StructuredQueryBuilder.phrase;
+import static com.kiblerdude.awsome.cloudsearch.StructuredQueryBuilder.prefix;
+import static com.kiblerdude.awsome.cloudsearch.StructuredQueryBuilder.range;
 import static org.junit.Assert.assertEquals;
 
 import java.util.Date;

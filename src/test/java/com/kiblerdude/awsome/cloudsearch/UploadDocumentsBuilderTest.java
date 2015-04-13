@@ -1,4 +1,4 @@
-package io.awsome.cloudsearch;
+package com.kiblerdude.awsome.cloudsearch;
 
 import static org.junit.Assert.*;
 
@@ -12,6 +12,9 @@ import com.amazonaws.services.cloudsearchdomain.model.UploadDocumentsRequest;
 import com.amazonaws.util.IOUtils;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.kiblerdude.awsome.cloudsearch.UploadAction;
+import com.kiblerdude.awsome.cloudsearch.UploadActionBatch;
+import com.kiblerdude.awsome.cloudsearch.UploadDocumentsBuilder;
 
 public class UploadDocumentsBuilderTest {
 

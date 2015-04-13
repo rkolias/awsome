@@ -11,7 +11,7 @@ A companion library for the AWS Java SDK that provides helpful functionality to 
 #### Integration with Maven
 
         <dependency>
-            <groupId>io.awsome</groupId>
+            <groupId>com.kiblerdude</groupId>
             <artifactId>awsome</artifactId>
             <version>${awsome.version}</version>
         </dependency>
@@ -26,8 +26,8 @@ The `StructuredQueryBuilder` helps build structured search queries.
 
 The various query builder functions may be imported statically for less verbose code:
 
-	import static io.awsome.cloudsearch.StructuredQueryBuilder.and;
-	import static io.awsome.cloudsearch.StructuredQueryBuilder.eq;
+	import static com.kiblerdude.awsome.cloudsearch.StructuredQueryBuilder.and;
+	import static com.kiblerdude.awsome.cloudsearch.StructuredQueryBuilder.eq;
 
 Structured queries are built using one or more of the functions provided:
 
