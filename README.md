@@ -47,7 +47,7 @@ Define a class representing your Cloudsearch schema and add Jackson annotations 
 		...
 	}
 
-Create a `UploadDocumentBuilder` and add and remove documents:
+Create a `UploadDocumentsBuilder` and add and remove documents:
 
 	UploadDocumentsBuilder<MyDocument> builder = new UploadDocumentsBuilder<>();
 

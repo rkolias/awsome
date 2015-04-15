@@ -47,7 +47,7 @@ import com.google.common.collect.ImmutableSet;
  *            A class representing the documents in the Cloudsearch schema,
  *            properly annotated with Jackson annotations.
  */
-public class UploadDocumentsBuilder<T extends Object> {
+public final class UploadDocumentsBuilder<T extends Object> {
 	
 	private ImmutableSet<UploadAction<T>> adds;
 	private ImmutableSet<UploadAction<T>> deletes;

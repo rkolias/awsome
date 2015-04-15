@@ -34,7 +34,7 @@ import com.google.common.collect.ImmutableSet;
  * 
  * @author kiblerj
  */
-public class StructuredQueryBuilder {
+public final class StructuredQueryBuilder {
 
 	// strings and dates need to be surrounded by single quotes
 	private static final String QUOTED_FORMAT = "'%s'";

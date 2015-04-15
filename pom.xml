@@ -8,7 +8,7 @@
 	<packaging>jar</packaging>
 
 	<name>awsome</name>
-	<description>A companion library for the AWS Java SDK that provides helpful 4
+	<description>A companion library for the AWS Java SDK that provides helpful
     functionality to simplify integration with AWS services.</description>
 	<url>https://github.com/kiblerdude/awsome</url>
 
