@@ -36,7 +36,7 @@ Structured queries are built using one or more of the functions provided:
 
 ##### UploadDocumentsBuilder
 
-The `UploadDocumentBuilder` helps add and delete documents from Cloudsearch.
+The `UploadDocumentsBuilder` helps add and delete documents from Cloudsearch.
 
 Define a class representing your Cloudsearch schema and add Jackson annotations for JSON serialization:
 
