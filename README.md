@@ -1,12 +1,8 @@
 ## AWSome
 
+[![Build Status](https://travis-ci.org/kiblerdude/awsome.svg?branch=master)](https://travis-ci.org/kiblerdude/awsome)
+
 A companion library for the AWS Java SDK that provides helpful functionality to simplify integration with AWS services.
-
-#### Dependencies
-
-- AWS Java SDK
-- Guava
-- Jackson
 
 #### Integration with Maven
 
@@ -50,9 +46,7 @@ Define a class representing your Cloudsearch schema and add Jackson annotations 
 Create a `UploadDocumentsBuilder` and add and remove documents:
 
 	UploadDocumentsBuilder<MyDocument> builder = new UploadDocumentsBuilder<>();
-
 	MyDocument document = new MyDocument("value1", ...);
-
 	builder.add("id.1", document);
 	builder.delete("id.2");
 
