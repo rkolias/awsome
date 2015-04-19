@@ -54,3 +54,30 @@ Obtain a `UploadDocumentsRequest` with the `build()` method:
 
 	UploadDocumentsRequest request = builder.build();
 
+#### Simple Queue Service
+
+The `SQueue` abstracts the AWS SQS request/response model into simple `push` and `pop` operations for JSON messages.
+
+Define a class representing your message and add Jackson annotations for JSON Serialization:
+
+	@JsonSerialize
+	public class MyMessage {
+		@JsonProperty(value="body")
+		private String body;
+		...
+	}
+
+Construct and `SQueue` with the client, queue name, and message class type:
+
+	SQueue queue = new SQueue("myqueue", "client", MyMessage.class);
+
+Push and pop messages:
+
+	queue.push(new MyMessage("hello"));
+	queue.push(new MyMessage("world"));
+	
+	Optional<MyMessage> message = queue.pop(); // "hello"
+	
+	if (message.isPresent()) {
+		// do something...
+	}
