@@ -183,7 +183,7 @@ public final class SQueue<M extends Object> {
      * 
      * @return <code>true</code> if the request was successful
      */
-    private boolean fillBuffer() throws IOException {
+    private synchronized boolean fillBuffer() throws IOException {
         if (receiveBuffer.isEmpty()) {
             ReceiveMessageRequest request = new ReceiveMessageRequest()
                     .withMaxNumberOfMessages(DEFAULT_RECV_MAX_MESSAGES).withQueueUrl(endpoint)
